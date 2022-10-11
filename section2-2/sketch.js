@@ -5,7 +5,7 @@
 // (2) 最初の3本が細い、次の3本が太い、最後の3本がすごく太い
 
 function setup() {
-  createCanvas(100,100);
+  createCanvas(500,500);
   background(196);
   for(let i = 0; i < 9; i++){
     // 変えるのはここから
@@ -13,10 +13,10 @@ function setup() {
       strokeWeight(2);
     }
     else{
-      strokeWeight(1);
+      strokeWeight(2);
     }
     // ここまでの間になります
     let x = i * 10 + 10;
-    line(x, 0, x, 100);
+    line(x, 0, x, x);
   }
 }
